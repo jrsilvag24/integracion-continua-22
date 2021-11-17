@@ -3,7 +3,7 @@ Proyecto de integración continua 2021.
 Integrantes:
 Rafael Humberto Rubiano Novoa
 Jose Reinel Silva
-Luis Felipe López
+Luis Felipe López Navarro
 Leonardo Cabezas
 
 Institución Universitaria Politécnico Grancolombiano.
