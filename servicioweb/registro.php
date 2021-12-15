@@ -5,7 +5,8 @@ $correo = $_POST['correo'];
 $username = $_POST['username'];
 $contra = $_POST['contra'];
 
-$con = mysqli_connect("localhost","root","","usuarios");
+
+$con = mysqli_connect("basededatos:3306","myuser","welcome1","usuarios");
 $query = "insert into clientes values('$username', '$nombre','$correo','$contra')";
 
 if($con){

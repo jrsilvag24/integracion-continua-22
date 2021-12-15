@@ -1,21 +1,18 @@
 <?php 
 $nombre = $_POST['nombre'];
 $pass = $_POST['password'];
-$serverName = "basededatos:3306";
-$userName = "myuser";
-$pass="welcome1";
-$con = mysqli_connect($serverName,$userName,$pass,"usuarios");
-$query = "select * from clientes where username='".$nombre."' and contra='".$pass."'";
 
+$con = mysqli_connect("basededatos:3306","myuser","welcome1","usuarios");
+$query = "select * from clientes where username='".$nombre."' and password='".$pass."'";
 if($con){
     $result = mysqli_query($con, $query);
-
+	
     if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
             $nombre = $row['nombre'];
             $username = $row['username'];
-            $password = $row['contra'];
+            $password = $row['password'];
             $correo = $row['correo'];
 
             echo '<!DOCTYPE html>
@@ -24,7 +21,7 @@ if($con){
             <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=1, initial-scale=1.0">
-                <title>LoyoSteve Inc. | Sesion</title>
+                <title>Sesion</title>
                 <link rel="stylesheet" href="estilosesion.css">
                 <link rel="shortcut icon" href="undraw_male_avatar_323b.svg" type="image/x-icon">
             </head>
@@ -60,8 +57,7 @@ if($con){
             
                 <footer>
                     <div class="conteninfo">
-                        <h1>LoyoSteve Inc.</h1>
-                        <p>Página diseñada por LoyoSteve Inc. | Todos los derechos reservados</p>
+                        <h1>Integración Continua 22</h1>
             
                     </div>
                 </footer>

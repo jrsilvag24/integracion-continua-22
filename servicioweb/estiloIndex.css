@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 :root {
-    --colorBase: #3A4B90;
+    --colorBase: #6685FF;
 }
 
 * {
@@ -46,7 +46,7 @@ header {
 
 .menu a:hover {
     transition: 0.5s;
-    background: #8e9fe6;
+    background: #549FE6;
     color: black;
     border: solid;
     border-width: 1px;
